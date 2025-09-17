@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driver Dashboard - Routes</title>
+  <link rel="stylesheet" href="route.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-left">
+      <div class="logo">TaxiCoN Driver</div>
+    </div>
+    <div class="header-right">
+      <span class="badge">Online</span>
+      <button class="btn">🔔</button>
+      <button class="btn">👤</button>
+      <button class="btn logout">Logout</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Upcoming Trips</h2>
+    <button class="btn schedule-btn">📅   View Schedule</button>
+
+    <section class="trips">
+      <div class="trip-card">
+        <div class="trip-time-location">
+          <div class="time-location">
+            <div class="time">17:45</div>
+            <div class="location">City Center</div>
+          </div>
+          <div class="route-line">➡️</div>
+          <div class="time-location">
+            <div class="time">+45m</div>
+            <div class="location">Riverside Station</div>
+          </div>
+        </div>
+        <div class="trip-details">
+          <span>8 passengers</span>
+          <span>R200 estimated</span>
+          <div>
+            <button class="btn outline">View Details</button>
+            <button class="btn">Start Trip</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="trip-card">
+        <div class="trip-time-location">
+          <div class="time-location">
+            <div class="time">19:30</div>
+            <div class="location">Mountain View</div>
+          </div>
+          <div class="route-line">➡️</div>
+          <div class="time-location">
+            <div class="time">+45m</div>
+            <div class="location">Downtown</div>
+          </div>
+        </div>
+        <div class="trip-details">
+          <span>6 passengers</span>
+          <span>R150 estimated</span>
+          <div>
+            <button class="btn outline">View Details</button>
+            <button class="btn">Start Trip</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gps-card">
+      <h3>GPS Navigation</h3>
+      <p>Integrated navigation for your routes</p>
+      <div class="map-mock">
+        <div class="marker start"></div>
+        <div class="marker end"></div>
+        <div class="route-line-horizontal"></div>
+        <p>Route Planning</p>
+        <p>Optimized routes for maximum efficiency</p>
+      </div>
+      <div class="map-buttons">
+        <button class="btn"> Start Navigation</button>
+        <button class="btn outline">Route Options</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

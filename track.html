@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Commuter Dashboard</title>
+  <link rel="stylesheet" href="track.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+       <span>RideConnect</span>
+    </div>
+    <nav>
+      <button>🔔</button>
+      <button>👤</button>
+      <button class="logout"> ⎋ Logout</button>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <h2>Welcome back, Alex!</h2>
+    <p>Manage your bookings and find new rides</p>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab active" data-tab="book">Book a Ride</button>
+      <button class="tab" data-tab="bookings">My Bookings</button>
+      <button class="tab" data-tab="profile">Profile</button>
+    </div>
+
+    <!-- Book a Ride -->
+    <section class="tab-content active" id="book">
+      <div class="card">
+        <h3>Find Your Ride</h3>
+        <p>Search for available transport options</p>
+
+        <form >
+          <label>Pickup Location</label>
+          <input type="text" value="Riverside Station">
+
+          <label>Destination</label>
+          <input type="text" value="City Center">
+
+          <label>Travel Date</label>
+          <input type="date" value="2024-01-15">
+
+          <label>Preferred Time</label>
+          <input type="time" value="08:30">
+
+          <label>Passengers</label>
+          <input type="number" value="1" min="1" max="8">
+
+          <button type="submit">Search Available Rides</button>
+        </form>
+      </div>
+
+      <!-- Available Routes -->
+      <h3>Available Routes</h3>
+      <div class="card">
+        <p><strong>08:30</strong> Riverside Station → <strong>09:15</strong> City Center</p>
+        <p>Driver: John Smith | Seats: 8/14 | Price: R25</p>
+        <button>Book Now</button>
+      </div>
+      <div class="card">
+        <p><strong>09:00</strong> Mountain View → <strong>10:30</strong> Downtown</p>
+        <p>Driver: Sarah Wilson | Seats: 3/12 | Price: R35</p>
+        <button>Book Now</button>
+      </div>
+      <div class="card">
+        <p><strong>17:45</strong> City Center → <strong>18:30</strong> Riverside Station</p>
+        <p>Driver: Mary Johnson | Seats: 12/14 | Price: R25</p>
+        <button>Book Now</button>
+      </div>
+    </section>
+
+    <!-- My Bookings -->
+    <section class="tab-content" id="bookings">
+      <h3>My Bookings</h3>
+      <div class="card">
+        <p><strong>Booking #1</strong> - Confirmed</p>
+        <p>From: Riverside Station → City Center</p>
+        <p>Date: 2024-01-15 | Time: 08:30 | Seats: 2</p>
+        <p>Driver: John Smith | Vehicle: Toyota Hiace - ABC 123</p>
+        <button>Contact Driver</button>
+        <button class="danger">Cancel Booking</button>
+      </div>
+
+      <div class="card">
+        <p><strong>Booking #2</strong> - Pending</p>
+        <p>From: City Center → Riverside Station</p>
+        <p>Date: 2024-01-15 | Time: 17:45 | Seats: 1</p>
+        <p>Driver: Mary Johnson | Vehicle: Nissan Caravan - XYZ 789</p>
+        <button>Contact Driver</button>
+        <button class="danger">Cancel Booking</button>
+      </div>
+    </section>
+
+    <!-- Profile -->
+    <section class="tab-content" id="profile">
+      <div class="card">
+        <h3>Profile Information</h3>
+        <label>First Name</label>
+        <input type="text" value="Alex">
+
+        <label>Last Name</label>
+        <input type="text" value="Johnson">
+
+        <label>Email</label>
+        <input type="email" value="alex.johnson@email.com">
+
+        <label>Phone</label>
+        <input type="tel" value="+1 (555) 123-4567">
+
+        <label>Primary Location</label>
+        <input type="text" value="Riverside Station Area">
+
+        <button>Update Profile</button>
+      </div>
+
+      <div class="card">
+        <h3>Payment Methods</h3>
+        <p>💳 •••• •••• •••• 4567 (Expires 12/26)</p>
+        <button>Add Payment Method</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Simple tab switching
+    const tabs = document.querySelectorAll(".tab");
+    const contents = document.querySelectorAll(".tab-content");
+    tabs.forEach(tab => {
+      tab.addEventListener("click", () => {
+        tabs.forEach(t => t.classList.remove("active"));
+        contents.forEach(c => c.classList.remove("active"));
+        tab.classList.add("active");
+        document.getElementById(tab.dataset.tab).classList.add("active");
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Driver Dashboard</title>
+<link rel="stylesheet" href="driverView.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo"> TaxiCoN Driver</div>
+      <div class="header-actions">
+        <span class="badge">🟢 Online</span>
+        <button>🔔</button>
+        <button>👤</button>
+        <button>🚪 Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2>Welcome back, Thato Moretsele!</h2>
+    <p>Here's your performance overview and current route information</p>
+
+    <!-- Top Tabs Navigation -->
+<div class="tabs">
+  <button class="tab-button active" data-tab="overview">Overview</button>
+  <button class="tab-button" data-tab="routes">Routes</button>
+  <button class="tab-button" data-tab="earnings">Earnings</button>
+  <button class="tab-button" data-tab="profile">Profile</button>
+</div>
+
+<!-- Tab Contents -->
+<div class="tab-content active" id="overview">
+  <!-- Put your KPI cards and current route here -->
+</div>
+
+<div class="tab-content" id="routes">
+  <p>Upcoming Trips and GPS Navigation here.</p>
+</div>
+
+<div class="tab-content" id="earnings">
+  <p>Today / Weekly / Total Balance and Charts here.</p>
+</div>
+
+<div class="tab-content" id="profile">
+  <p>Driver info, Vehicle info, and Contact info here.</p>
+</div>
+
+
+    <!-- KPI Cards -->
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-title">Total Trips 🛣️</div>
+        <div class="card-value">247</div>
+        <div class="card-sub">+12 from last month</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Account Balance 💵</div>
+        <div class="card-value">R3420.50</div>
+        <div class="card-sub">+R185.75 today</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Rating ⭐</div>
+        <div class="card-value">4.8</div>
+        <div class="card-sub">Based on 247 reviews</div>
+      </div>
+      <div class="card">
+        <div class="card-title">KM Traveled 🧭</div>
+        <div class="card-value">15,420</div>
+        <div class="card-sub">This month: 1,240 km</div>
+      </div>
+    </div>
+
+    <!-- Current Route -->
+    <div class="card card-large">
+      <h3>Current Route 🚗</h3>
+      <p>Active trip in progress</p>
+      <div class="route-info">
+        <div>
+          <p>08:30</p>
+          <p>Dr Savage Station</p>
+        </div>
+        <div>➡️</div>
+        <div>
+          <p>09:15</p>
+          <p>City Center</p>
+        </div>
+      </div>
+      <div class="route-stats">
+        <div>Passengers: 12</div>
+        <div>Total Seats: 14</div>
+        <div>ETA Next Stop: 5 min</div>
+      </div>
+      <div class="progress">
+        <span>Route Progress: 75%</span>
+        <div class="progress-bar"><div class="progress-fill" style="width:75%"></div></div>
+      </div>
+      <button>🧭 Open GPS</button>
+    </div>
+
+    <!-- Next Loading Taxi -->
+    <div class="cards-grid">
+      <div class="card">
+        <h3>Next Loading Taxi ⏱️</h3>
+        <p>09:45 - Central Bus Terminal</p>
+        <p>Route: City Center → Airport</p>
+        <p>3 slots available</p>
+        <button>Reserve Slot</button>
+      </div>
+      <div class="card">
+        <h3>Today's Summary 📊</h3>
+        <div>Trips completed: 8</div>
+        <div>Earnings: R424.50</div>
+        <div>Distance: 245 km</div>
+        <div>Online time: 7h 30m</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
