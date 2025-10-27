@@ -1,4 +1,4 @@
-![ERD DIAGRAM](erd.png)
+
 
 1.Project Purpose
 
@@ -107,7 +107,7 @@ CREATE TABLE IF NOT EXISTS user_activity (
 
 3 ERD
 
-![project ERD]("C:\Users\nkhen\OneDrive\Documentos\2025 semester 2\BFB 320\readME\erd.png")
+![ERD DIAGRAM](erd.png)
 
 
 4. Steps on how to run the project
@@ -155,6 +155,7 @@ CREATE TABLE IF NOT EXISTS user_activity (
 8. Maintenance and Continuous Improvement
 •	Regularly update the system to improve features and enhance security.
 •	Continuously analyse data to optimize routes, reduce waiting times to improve service efficiency.
+
 
 
 
