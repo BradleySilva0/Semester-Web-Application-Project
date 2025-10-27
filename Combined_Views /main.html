@@ -4,8 +4,8 @@
  
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RideConnect</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>TaxiCoN</title>
+  <link rel="stylesheet" href="main.css" />
 </head>
 <body>
   <!-- Header -->
@@ -24,8 +24,8 @@
       </nav>
 
       <div class="auth-buttons">
-        <button class="btn-outline">Login</button>
-        <button class="btn-primary">Sign Up</button>
+        <button class="btn-outline" onclick="window.location.href='roleSelection.html'">Login</button>
+        <button class="btn-primary" onclick="window.location.href='signup.html'">Sign Up</button>
       </div>
     </div>
   </header>
@@ -70,8 +70,39 @@
       </div>
 
       <div class="booking-buttons">
-        <button class="btn-primary">Check Availability</button>
-        <button class="btn-outline">Track Transport</button>
+        <!--button class="btn-primary">Check Availability</button-->
+        <button class="btn-primary" onclick="window.location.href='Availability.html'">Check Availability</button>
+        <button class="btn-outline" onclick="window.location.href='Track.html'">Track Transport</button>
+        <!--button class="btn-outline">Track Transport</button-->
+      </div>
+    </div>
+  </section>
+
+  <section class="impact">
+    <div class="container">
+      <div class="section-header">
+        <h3>Measurable Impact</h3>
+        <p>Data-driven solutions for transportation efficiency</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <i class="fa-regular fa-clock icon blue"></i>
+          <h4 class="blue">40%</h4>
+          <p class="desc">Reduction in waiting time</p>
+          <p class="small">From 3-4 hours average wait to under 2 hours with real-time scheduling</p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-users icon green"></i>
+          <h4 class="green">95%</h4>
+          <p class="desc">Vehicle occupancy rate</p>
+          <p class="small">Increased from 70% to 95% through optimized seat allocation</p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-chart-line icon emerald"></i>
+          <h4 class="emerald">25%</h4>
+          <p class="desc">CO2 emissions reduction</p>
+          <p class="small">Less idling and empty returns through smart route optimization</p>
+        </div>
       </div>
     </div>
   </section>
@@ -100,34 +131,6 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-container">
-      <div class="footer-about">
-        <h4>RideConnect</h4>
-        <p>Making rural transport accessible, reliable, and efficient for everyone.</p>
-      </div>
-
-      <div class="footer-links">
-        <h4>Quick Links</h4>
-        <a href="#">About Us</a>
-        <a href="#">Services</a>
-        <a href="#">For Drivers</a>
-      </div>
-
-      <div class="footer-links">
-        <h4>Support</h4>
-        <a href="#">Help Center</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Safety</a>
-      </div>
-
-      <div class="footer-contact">
-        <h4>Contact Info</h4>
-        <p>📞 0783584725</p>
-        <p>✉️ bradleylive345@gmail.com</p>
-      </div>
-    </div>
-
     <div class="footer-bottom">
       <p>&copy; 2025 TaxiCoN. All rights reserved.</p>
     </div>

@@ -17,19 +17,20 @@ body {
 .header-left .logo {
     font-size: 2rem;
     font-weight: bold;
-    color: green;
+    color: gold;
 }
 
 .header-right .badge {
-    background: green;
-    padding: 2.5px 8px;
-    border-radius: 8px;
+    background: gold;
+    padding: 8px 10px;
+    border-radius: 4px;
     margin-right: 5px;
+    color: white;
 }
 
 .header-right .btn {
     margin-left: 5px;
-    padding: 5px 10px;
+    padding: 10px 10px;
     border: none;
     cursor: pointer;
     background: transparent;
@@ -38,9 +39,9 @@ body {
 }
 
 .header-right .logout {
-    border: 1px solid green;
+    border: 1px solid lightgray;
     background: transparent;
-    color: black;
+    color: gold;
 }
 
 .container {
@@ -62,7 +63,7 @@ h2 {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    background: green;
+    background: gold;
     color: #fff;
 }
 
@@ -73,7 +74,7 @@ h2 {
 }
 
 .trip-card {
-    background:rgb(202, 229, 202);
+    background: #fff8dc; /* light gold tone */
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -109,18 +110,18 @@ h2 {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    background: green;
+    background: gold;
     color: #fff;
 }
 
 .trip-details button.outline {
     background: #fff;
-    color: green;
-    border: 1px solid green;
+    color: gold;
+    border: 1px solid gold;
 }
 
 .gps-card {
-    background:rgb(202, 229, 202);
+    background: #fff8dc; /* light gold tone */
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -146,7 +147,7 @@ h2 {
 }
 
 .marker.start {
-    background: green;
+    background: gold;
     top: 30%;
     left: 25%;
 }
@@ -163,7 +164,7 @@ h2 {
     left: 25%;
     width: 50%;
     height: 1px;
-    background: green;
+    background: gold;
 }
 
 .map-buttons {
@@ -177,16 +178,14 @@ h2 {
     border-radius: 4px;
     border: none;
     cursor: pointer;
-    background: green;
+    background: gold;
     color: #fff;
     font-weight: bold;
 }
 
 .map-buttons button.outline {
-    border: 1px solid green;
+    border: 1px solid gold;
     background: #fff;
-    color: green;
+    color: gold;
     font-weight: bold;
 }
-
-

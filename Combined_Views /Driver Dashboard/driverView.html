@@ -11,10 +11,10 @@
     <div class="container header-container">
       <div class="logo"> TaxiCoN Driver</div>
       <div class="header-actions">
-        <span class="badge">🟢 Online</span>
-        <button>🔔</button>
-        <button>👤</button>
-        <button>🚪 Logout</button>
+        <span class="badge">Online</span>
+        
+        <button> Logout</button>
+        
       </div>
     </div>
   </header>
@@ -26,14 +26,15 @@
     <!-- Top Tabs Navigation -->
 <div class="tabs">
   <button class="tab-button active" data-tab="overview">Overview</button>
-  <button class="tab-button" data-tab="routes">Routes</button>
-  <button class="tab-button" data-tab="earnings">Earnings</button>
-  <button class="tab-button" data-tab="profile">Profile</button>
+  <button class="tab-button" onclick="window.location.href='route.html'" data-tab="routes">Routes</button>
+  <button class="tab-button" onclick="window.location.href='earning.html'" data-tab="earnings">Earnings</button>
+  <button class="tab-button" onclick="window.location.href='profile.html'" data-tab="profile">Profile</button>
+
+ 
 </div>
 
 <!-- Tab Contents -->
 <div class="tab-content active" id="overview">
-  <!-- Put your KPI cards and current route here -->
 </div>
 
 <div class="tab-content" id="routes">
@@ -52,22 +53,22 @@
     <!-- KPI Cards -->
     <div class="cards-grid">
       <div class="card">
-        <div class="card-title">Total Trips 🛣️</div>
+        <div class="card-title">Total Trips </div>
         <div class="card-value">247</div>
         <div class="card-sub">+12 from last month</div>
       </div>
       <div class="card">
-        <div class="card-title">Account Balance 💵</div>
+        <div class="card-title">Account Balance </div>
         <div class="card-value">R3420.50</div>
         <div class="card-sub">+R185.75 today</div>
       </div>
       <div class="card">
-        <div class="card-title">Rating ⭐</div>
+        <div class="card-title">Rating </div>
         <div class="card-value">4.8</div>
         <div class="card-sub">Based on 247 reviews</div>
       </div>
       <div class="card">
-        <div class="card-title">KM Traveled 🧭</div>
+        <div class="card-title">KM Traveled </div>
         <div class="card-value">15,420</div>
         <div class="card-sub">This month: 1,240 km</div>
       </div>
@@ -82,7 +83,7 @@
           <p>08:30</p>
           <p>Dr Savage Station</p>
         </div>
-        <div>➡️</div>
+        <div></div>
         <div>
           <p>09:15</p>
           <p>City Center</p>
@@ -97,20 +98,20 @@
         <span>Route Progress: 75%</span>
         <div class="progress-bar"><div class="progress-fill" style="width:75%"></div></div>
       </div>
-      <button>🧭 Open GPS</button>
+      <button> Open GPS</button>
     </div>
 
     <!-- Next Loading Taxi -->
     <div class="cards-grid">
       <div class="card">
-        <h3>Next Loading Taxi ⏱️</h3>
+        <h3>Next Loading Taxi </h3>
         <p>09:45 - Central Bus Terminal</p>
         <p>Route: City Center → Airport</p>
         <p>3 slots available</p>
         <button>Reserve Slot</button>
       </div>
       <div class="card">
-        <h3>Today's Summary 📊</h3>
+        <h3>Today's Summary </h3>
         <div>Trips completed: 8</div>
         <div>Earnings: R424.50</div>
         <div>Distance: 245 km</div>

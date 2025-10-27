@@ -89,7 +89,7 @@ body {
 }
 
 .btn-outline:hover {
-  background: green;
+  background: rgb(213, 155, 7);
   color: white;
 }
 
@@ -216,44 +216,109 @@ body {
 }
 
 /* Footer */
-.footer {
-  background: #f5fff5;
-  border-top: 1px solid #ddd;
-  padding: 40px 20px;
-}
-
-.footer-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-}
-
-.footer h4 {
-  margin-bottom: 10px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.footer a {
-  display: block;
-  color: #666;
-  text-decoration: none;
-  margin-bottom: 8px;
-}
-
-.footer a:hover {
-  color: #198754;
-}
-
-.footer-contact p {
-  margin-bottom: 8px;
-  color: #666;
-}
 
 .footer-bottom {
   text-align: center;
+  background-color:#ecf6ee ;
   margin-top: 20px;
   padding-top: 20px;
   border-top: 1px solid #ddd;
   color: #666;
+}
+
+/* IMPACT SECTION */
+.impact {
+  background: #f9fafb; /* light gray background to separate from hero */
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+/* container keeps content centered */
+.impact .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* section header */
+.section-header h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+.section-header p {
+  font-size: 1.1rem;
+  color: #6b7280; /* gray-500 */
+  margin-bottom: 3rem;
+}
+
+/* card layout */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+/* on bigger screens, show 3 cards in a row */
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* individual card */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* icon */
+.icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+
+/* highlight number */
+.card h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card h4.blue { 
+  color: rgb(94, 159, 94);
+  font-size: 35px;
+}
+.card h4.green { 
+  color: rgb(94, 159, 94);
+  font-size: 35px;
+ }
+.card h4.emerald {
+   font-size: 35px;
+   color: rgb(94, 159, 94);
+  }
+
+/* description */
+.card .desc {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+/* small text */
+.card .small {
+  font-size: 0.9rem;
+  color: #6b7280;
+  line-height: 1.4;
 }

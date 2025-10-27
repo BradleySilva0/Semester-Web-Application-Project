@@ -9,7 +9,7 @@
 <body>
   <!-- Header -->
   <header class="header">
-    <a href="/commuter-dashboard" class="button-ghost">
+    <a href="Availability.html" class="button-ghost">
       ← Back to Dashboard
     </a>
     <div class="header-logo">
@@ -70,6 +70,7 @@
             <span class="badge">Default</span>
           </div>
           <button class="button-outline">Change Payment Method</button>
+          
         </div>
 
       </div>
@@ -80,11 +81,14 @@
         <!-- Booking Summary -->
         <div class="card sticky">
           <h3 class="card-title">Booking Summary</h3>
-          <div class="summary-row"><span>Base fare (1 passenger)</span><span>$25</span></div>
-          <div class="summary-row"><span>Service fee</span><span>$2</span></div>
+          <div class="summary-row"><span>Base fare (1 passenger)</span><span>R25</span></div>
+          <div class="summary-row"><span>Service fee</span><span>R2</span></div>
           <hr>
-          <div class="summary-row total"><span>Total</span><span>$27</span></div>
-          <button class="button-primary">Confirm Booking</button>
+          <div class="summary-row total"><span>Total</span><span>R27</span></div>
+          <!--button class="button-primary">Confirm Booking</button-->
+          <button class="button-primary" onclick="window.location.href='payment.html'">Confirm Booking</button>
+          
+
           <p class="terms">By booking, you agree to our Terms of Service and Privacy Policy</p>
         </div>
 
@@ -97,7 +101,7 @@
               <p class="driver-name">John Smith</p>
               <p class="driver-rating">⭐ 4.8</p>
               <p class="driver-vehicle">🚗 Toyota Hiace - ABC 123</p>
-              <p class="driver-phone">📞 +1 (555) 987-6543</p>
+              <p class="driver-phone">📞 +27 078 358 4725</p>
             </div>
           </div>
           <button class="button-outline">Contact Driver</button>

@@ -1,4 +1,4 @@
-/* Login page CSS*/
+/* Login page CSS */
 
 * {
   margin: 0;
@@ -32,7 +32,7 @@ body {
   font-size: 2.5rem;
   font-weight: bold;
   margin-left: 0.5rem;
-  color:green;
+  color: green;
 }
 
 /* Card */
@@ -76,8 +76,8 @@ input[type="password"] {
   transition: all 0.3s ease;
 }
 input:focus {
-  border-color:green;
-  box-shadow: 0 0 6px green;
+  border-color: rgb(225, 221, 221);
+  box-shadow: 0 0 6px rgb(132, 130, 130);
   outline: none;
 }
 
@@ -123,40 +123,6 @@ input:focus {
   margin-top: 1rem;
   text-align: center;
   font-size: 0.9rem;
-}
-
-/* Divider */
-.divider {
-  border-top: 1px solid #e5e7eb;
-  margin: 1.5rem 0;
-}
-
-/* Continue */
-.continue {
-  text-align: center;
-}
-.continue p {
-  font-size: 0.85rem;
-  color: #6b7280;
-  margin-bottom: 1rem;
-}
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.75rem;
-}
-.btn-outline {
-  padding: 0.7rem;
-  border: 1px solid #d1d5db;
-  background: transparent;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.btn-outline:hover {
-  border-color: green;
-  color: green;
-  transform: scale(1.02);
 }
 
 /* Back to home */

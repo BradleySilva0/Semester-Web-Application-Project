@@ -13,7 +13,7 @@ body {
 }
 
 .header {
-  background: #eff4ef;
+  background:rgb(227, 231, 227);
   padding: 10px 0;
   border-bottom: 1px solid #ccc;
   position: sticky;
@@ -28,7 +28,7 @@ body {
 
 .logo {
   font-size: 2rem;
-  color: green;
+  color: gold;
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -37,24 +37,28 @@ body {
 
 .header-actions button {
   margin-left: 5px;
-  padding: 5px 10px;
+  padding: 10px 10px;
   font-size: 1em;
+  color: gold;
   background: transparent;
   border: 1px solid lightgray;
   border-radius: 8px;
+  font-weight: bold;
   cursor: pointer;
   transition: background 0.2s, transform 0.1s;
 }
 
 .header-actions button:hover {
-  background: #b9e6b9;
+  background: #e6c200;
+  color: white;
   transform: translateY(-1px);
 }
 
 .badge {
-  padding: 5px 10px;
-  background: #d4f0d4;
-  border-radius: 12px;
+  padding: 10px 10px;
+  background: gold;
+  color: white;
+  border-radius: 8px;
   margin-right: 10px;
   font-weight: bold;
 }
@@ -78,7 +82,7 @@ p {
 }
 
 .card {
-  background: #e6f7e6;
+  background: #fff8dc; /* light gold tone instead of greenish */
   padding: 15px;
   border-radius: 12px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.1);
@@ -135,7 +139,7 @@ p {
 }
 
 .progress-fill {
-  background: green;
+  background: gold;
   height: 100%;
   width: 0%;
 }
@@ -143,7 +147,7 @@ p {
 /* Buttons inside cards */
 .card button {
   padding: 8px 16px;
-  background: green;
+  background: gold;
   border: none;
   border-radius: 8px;
   color: #fff;
@@ -154,7 +158,7 @@ p {
 }
 
 .card button:hover {
-  background: #43a047;
+  background: #e6c200;
   transform: translateY(-1px);
 }
 
@@ -175,13 +179,10 @@ p {
   transition: background 0.2s, color 0.2s;
 }
 
-.tab-button.active {
-  border-bottom: 3px solid #4caf50;
-  color: #4caf50;
-}
-
 .tab-button:hover {
-  background: #e6f7e6;
+  background: #e6c200;
+  color: white;
+  border-radius: 4px;
 }
 
 .tab-content {
@@ -191,4 +192,3 @@ p {
 .tab-content.active {
   display: block;
 }
-

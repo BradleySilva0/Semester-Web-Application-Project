@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: white;
+    color: #5c4b2e; /* default text slightly dark for readability */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: rgb(227, 231, 227); /* header background neutral */
+    border-bottom: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+}
+
+.header-left .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: gold;
+}
+
+.header-right .badge {
+    background: gold;
+    padding: 10px 10px;
+    border-radius: 4px;
+    margin-right: 5px;
+    color: #3e2f16; /* dark text on badge */
+    font-weight: bold;
+}
+
+.header-right .btn {
+    margin-left: 5px;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    color: #5c4b2e; /* dark text */
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.header-right .logout {
+    border: 1px solid lightgray;
+    background: transparent;
+    color: gold;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #3e2f16; /* darker heading */
+    margin-bottom: 20px;
+}
+
+/* Cards */
+.card {
+    background: #fff8dc; /* light gold */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    color: #5c4b2e; /* dark text inside cards */
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #8B6508; /* card title slightly darker */
+}
+
+.value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #8B6508; /* card main values */
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    color: #5c4b2e; /* subtitle dark for contrast */
+}
+
+/* Buttons */
+.btn {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background: gold;
+    color: #3e2f16; /* dark text */
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn:hover {
+    background: #e6c200;  /* darker gold hover */
+    color: #3e2f16;       /* keep dark text */
+}
+
+.btn.outline {
+    background: transparent;
+    border: 1px solid gold;
+    color: #5c4b2e;       /* dark text */
+}
+
+.btn.outline:hover {
+    background: gold;
+    color: #3e2f16;
+}
+
+/* Grid Sections */
+.driver-info, .earnings-cards {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Avatar */
+.avatar {
+    width: 80px;
+    height: 80px;
+    background: lightgray;
+    color: #fff;
+    border-radius: 50%;
+    border: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+    font-size: 2rem;
+}
+
+/* Contact Info */
+.info-grid, .contact-info .card {
+    display: grid;
+    gap: 8px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+/* Chart Cards */
+.chart-card, .chart-mock, .payout-card {
+    background: #fff8dc; /* light gold */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Payout Buttons */
+.payout-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.payout-buttons button {
+    flex: 1;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    background: gold;
+    color: #3e2f16;
+    font-weight: bold;
+}
+
+.payout-buttons .outline {
+    border: 1px solid gold;
+    background: #fff8dc;
+    color: #5c4b2e;
+}
+
+.payout-buttons button:hover, .payout-buttons .outline:hover {
+    background: #e6c200;
+    color: #3e2f16;
+}

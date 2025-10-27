@@ -8,7 +8,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
-    background: #ecf6ee;
+    background: rgb(227, 231, 227); /* subtle gold-tinted background */
     border-bottom: 1px solid #ccc;
     position: sticky;
     top: 0;
@@ -17,19 +17,19 @@ body {
 .header-left .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: green;
+    color: gold;
 }
 
 .header-right .badge {
-    background: green;
-    padding: 2px 8px;
+    background: gold;
+    padding: 9px 9px;
     border-radius: 4px;
     margin-right: 5px;
 }
 
-.header-right .btn {
+.header-right .btn {  
     margin-left: 5px;
-    padding: 5px 10px;
+    padding: 9px 10px;
     border: none;
     cursor: pointer;
     background: transparent;
@@ -63,7 +63,7 @@ h2 {
 }
 
 .card {
-    background: #ecf6ee;
+    background: #fff8dc; /* light gold background */
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -77,7 +77,7 @@ h2 {
 .value {
     font-size: 1.5rem;
     font-weight: bold;
-    color: green;
+    color: gold;
 }
 
 .subtitle {
@@ -86,7 +86,7 @@ h2 {
 }
 
 .chart-card {
-    background: #fff;
+    background: #f6ecc2;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -96,7 +96,7 @@ h2 {
 
 .chart-mock {
     height: 200px;
-    background: #bae6fd;
+    background: #cfe0e9;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -105,7 +105,7 @@ h2 {
 }
 
 .payout-card {
-    background: #ecf6ee;
+    background: #fff8dc;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -133,12 +133,12 @@ h2 {
     border-radius: 4px;
     border: none;
     cursor: pointer;
-    background: green;
+    background: gold;
     color: #fff;
 }
 
 .payout-buttons .outline {
-    border: 1px solid green;
+    border: 1px solid gold;
     background: #fff;
-    color: green;
+    color: gold;
 }

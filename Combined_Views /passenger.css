@@ -1,0 +1,210 @@
+/* General Reset and Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f9fafb; /* light neutral background */
+  color: #111827;      /* dark text */
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  background: #ecf6ee;  /* soft green */
+  padding: 10px 0;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: green;
+}
+
+.header-actions button {
+  margin-left: 8px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  color: #111827;
+  background: transparent;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Book New Trip button */
+.header-actions .btn-book {
+  background: green;
+  color: white;
+  border: none;
+}
+
+/* Hover all header buttons */
+.header-actions button:hover {
+  background: goldenrod; /* dark gold */
+  color: white;
+}
+
+/* Badge */
+.badge {
+  padding: 6px 12px;
+  background: green;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+/* Titles */
+h2 {
+  font-size: 2em;
+  margin: 10px 0 5px;
+}
+
+p {
+  margin: 0 0 15px 0;
+  color: #6b7280; /* gray text */
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  background: transparent;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tab-button.active {
+  background: green;
+  color: #fff;
+  border-color: green;
+}
+
+.tab-button:hover {
+  background: goldenrod; /* dark gold */
+  color: white;
+}
+
+/* Cards Grid */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Card Styles */
+.card {
+  background: #ecf6ee; /* keep the soft green card color */
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card-large {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.card-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card-value {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.card-sub {
+  font-size: 0.85em;
+  color: #6b7280;
+}
+
+/* Route Info & Stats */
+.route-info {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.route-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+/* Progress Bar */
+.progress-bar {
+  background: #e5e7eb; /* gray background */
+  border-radius: 6px;
+  height: 10px;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.progress-fill {
+  background: green;
+  height: 100%;
+  width: 0%;
+}
+
+/* Buttons inside cards */
+.card button {
+  padding: 8px 16px;
+  background: green;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Hover buttons */
+.card button:hover {
+  background: goldenrod; /* dark gold */
+}
+
+/* Card Buttons container (for multiple buttons like Book/Track/Cancel) */
+.card-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
