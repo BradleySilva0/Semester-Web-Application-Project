@@ -1,3 +1,5 @@
+![ERD DIAGRAM](erd.png)
+
 1.Project Purpose
 
 The purpose of this project is to improve the efficiency, reliability, and safety of rural and long-distance taxi transport in South Africa by developing a web-based system that connects commuters with taxi operators. The system will reduce passenger waiting times, enhance route coordination system, enable real-time communication, support digital bookings and payments as well as verify authorized taxi operators. By doing so, the project seeks to increase commuter satisfaction, improve driver productivity, and strengthen the overall supply chain performance in rural communities.
@@ -153,4 +155,9 @@ CREATE TABLE IF NOT EXISTS user_activity (
 8. Maintenance and Continuous Improvement
 •	Regularly update the system to improve features and enhance security.
 •	Continuously analyse data to optimize routes, reduce waiting times to improve service efficiency.
+
+
+
+
+
 
